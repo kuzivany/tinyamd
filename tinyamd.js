@@ -4,7 +4,7 @@
 var doc = document;
 var el_head = doc.head || doc.getElementsByTagName("head")[0] || doc.documentElement;
 var node = (function (scripts) {
-    return scripts[scripts.length - 1];
+    return scripts[scripts.length - 1]; // gets the last script element
 })(doc.getElementsByTagName('script'));
 var main = node.getAttribute('data-main');
 var anonymous_queue = [];
@@ -200,7 +200,7 @@ function inject (file, callback) {
     };
     script.type = 'text/javascript';
     script.async = true;
-    script.src = file;
+    script.src = file.replace(/(?:\.js){2,}$/, '.js');
     el_head.appendChild(script);
 };
 
