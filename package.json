@@ -1,0 +1,10 @@
+{
+  "name": "tinyamd",
+  "version": "1.0.0",
+  "description": "Teeny tiny AMD loader. About 1.2k minifed and gzipped.",
+  "main": "tinyamd.js",
+  "repository": "https://github.com/kuzivany/tinyamd.git",
+  "author": "Kuzivakwashe <kuzivany@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
