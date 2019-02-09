@@ -3,8 +3,20 @@
   "version": "1.0.0",
   "description": "Teeny tiny AMD loader. About 1.2k minifed and gzipped.",
   "main": "tinyamd.js",
+  "browser": "tinyamd.min.js",
   "repository": "https://github.com/kuzivany/tinyamd.git",
-  "author": "Kuzivakwashe <kuzivany@gmail.com>",
+  "author": "Brian Cray <bcrayzie@gmail.com>",
+  "contributors": [
+    "Perry Mitchell <perry@kiosked.com>",
+    "Kuzivakwashe <kuzivany@gmail.com>"
+  ],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "rollup": "0.68.2",
+    "rollup-plugin-uglify": "^6.0.2"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  }
 }
